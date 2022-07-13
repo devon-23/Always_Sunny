@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/vue@3.0.5"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>It's Always Sunny Quotes!</title>
+    </head>
+
+    <body>
+        
+        <div id="app">
+            <button v-on:click="getQuote()">Get Random Quote</button>
+            <div class="quote--container">
+                <p class="quote">{{ quote }}</p>
+                <p class="quote--author">{{ who }}</p>
+                <p class="quote--author">{{ episode }}</p>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
